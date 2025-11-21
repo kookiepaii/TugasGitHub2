@@ -1,15 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile</title>
-</head>
-<body>
-    <h1>Selamat Datang di Web Unika</h1>
+<!doctype html>
+</div>
+</div>
+</section>
 
-    <h2>Visi</h2>
-    <h2>Misi</h2>
-    
+
+<section id="contact" class="container contact">
+<h2>Kontak</h2>
+<p>Ingin berdiskusi? Isi form singkat atau hubungi kami langsung via email / telepon.</p>
+
+
+<div class="contact-grid">
+<form class="contact-form" onsubmit="return false;">
+<label>Nama
+<input type="text" placeholder="Nama lengkap" required>
+</label>
+<label>Email
+<input type="email" placeholder="nama@contoh.com" required>
+</label>
+<label>Pesan
+<textarea rows="4" placeholder="Tulis pesan..." required></textarea>
+</label>
+<button class="btn btn-primary" type="submit">Kirim Pesan</button>
+</form>
+
+
+<div class="contact-info">
+<p><strong>Email:</strong> info@contohmaju.co.id</p>
+<p><strong>Telepon:</strong> +62 812-3456-7890</p>
+<p><strong>Alamat:</strong> Jl. Contoh No. 123, Jakarta</p>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> PT ContohMaju. Semua hak dilindungi.</p>
+<div class="socials">
+<a href="#">Twitter</a>
+<a href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+
+
+<script>
+// Set tahun otomatis
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
